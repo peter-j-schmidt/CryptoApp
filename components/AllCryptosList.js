@@ -21,10 +21,23 @@ export default function AllCryptosList() {
                     data={data}
                     keyExtractor={({ id }, index) => id}
                     renderItem = {({ item }) => (
-                        <Text>{item.symbol}, {item.name}, {item.price_usd}</Text>
+                        <View style={{ flex: 1, backgroundColor: "red" }}>
+                            <Text>{item.symbol}, {item.name}, {item.price_usd}</Text>
+                        </View>
                     )}
                 />
             )}
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    container: {
+      marginTop: 20,
+      padding: 20,
+      flex: 1,
+      backgroundColor: 'red',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
