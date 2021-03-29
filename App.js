@@ -7,24 +7,25 @@ import CryptoInfo from './components/CryptoInfo';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <ScrollView>
+    <SafeAreaView style={styles.container}>
+      <Text>Hello, world!</Text>
+
+      {/* <ScrollView>
         <Text>Open up App.js to start working on your app!</Text>
         <AllCryptosList />
         <MyCryptosList />
         <CryptoInfo />
       <StatusBar style="auto" />
-      </ScrollView>
-    </View>
+      </ScrollView> */}
+      
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
-    padding: 20,
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'dodgerblue',
     alignItems: 'center',
     justifyContent: 'center',
   },
